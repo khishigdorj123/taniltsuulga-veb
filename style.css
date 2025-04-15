@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+
+.hero-content {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+.section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeInUp 0.6s ease both;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Үүнийг өмнөхтэй ижил өнгөтэй тохируулах */
+    color: white;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #ff5e62;
+    margin-bottom: 15px;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+footer {
+    background-color: #544024;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer p a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
